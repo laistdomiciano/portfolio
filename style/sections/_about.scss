@@ -49,14 +49,26 @@
 }
 
     &__image {
-      display: flex;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
-      img {
-        max-width: 350px;
-        width: 100%;
-      }
+  /* ... other styles ... */
+  position: relative; /* Make the element positionable */
+}
+
+&__image::before {
+  content: ''; /* Hide the pseudo-element */
+  position: absolute; /* Position it absolutely within the parent */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Create the rounded frame */
+  background-color: #fff; /* Set the background color (optional) */
+}
+
+    img {
+  /* Adjust max-width if needed for a smaller image */
+  max-width: 300px;  /* Adjust this value for desired image size */
+  width: 100%;
+}
 
       @include respond(tab-land) {
         height: 100%;
