@@ -23,6 +23,31 @@
       grid-template-columns: 1fr;
     }
 
+    .about-wrapper__cta a {
+  display: inline-block;
+  width: 200px; /* Set a fixed width for the buttons */
+  text-align: center; /* Center the text inside the buttons */
+  padding: 10px; /* Adjust padding as needed */
+  margin-right: 10px; /* Adjust spacing between buttons */
+  border: 2px solid white; /* Ensure borders are consistent */
+}
+
+    .about-wrapper__cta a:last-child {
+  margin-right: 0;
+}
+
+    .cta-btn--resume {
+  background-color: #fff; /* Set the background color */
+  color: #000; /* Set the text color */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  text-decoration: none; /* Remove underline from links */
+}
+
+    .cta-btn--resume:hover {
+  background-color: #000; /* Set hover background color */
+  color: #fff; /* Set hover text color */
+}
+
     &__image {
       display: flex;
       height: 100%;
