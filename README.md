@@ -3,7 +3,7 @@
 
 ## Check final result here
 
-- [My Portfiolo](https://laistdomiciano.github.io/portifolio/)
+- [My Portfiolo](https://laistdomiciano.github.io/portfolio/)
 
 ## Find Me Online
 
